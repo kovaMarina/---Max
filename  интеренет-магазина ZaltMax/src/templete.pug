@@ -1,0 +1,28 @@
+doctype html
+html(lang='ru')
+	head
+		meta(charset="UTF-8")
+		meta(name="description", content="")
+		meta(http-equiv="X-UA-Compatible", content="IE=edge")
+		meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1")
+		title
+			block title
+		style
+			include ../pud/style/reset.css
+			include ../pud/style/scss/style.css
+
+		body
+			.wrapper
+				include block/header/header
+				include block/header/_home
+				include block/catalog/catalog
+
+			script(src='js.js')
+			script(src='https://code.jquery.com/jquery-3.5.1.slim.min.js')
+			script(src='https://code.jquery.com/jquery-3.6.0.min.js')
+			script(src="js/menu.js")
+			script(src='slick-1.8.1/slick/slick.min.js')
+			script(src='slick-1.8.1/script.js')
+			//<link rel="stylesheet" type="text/css" href="/slick/slick.css"/>
+			//<link rel="stylesheet" type="text/css" href="/slick/slick-theme.css"/>
+
